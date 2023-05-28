@@ -1,0 +1,27 @@
+template header
+
+type
+expression
+priority
+effectiveStartDate
+effectiveEndDate
+name
+action
+
+package com.bm;
+
+template "@{name}"
+
+import com.bm.droolengine.model.EvaluationCriteria;
+
+rule "@{name}_@{row.rowNumber}"
+	salience @{priority}
+	date-effective "@{effectiveStartDate}"
+	date-expires "@{effectiveEndDate}"
+	when
+		$req:EvaluationCriteria(@{expression})
+	then
+		$req.setAction("@{action}");
+end
+
+end template

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "c0069f22-3f1c-4bf6-b5ee-32cea80f6db8",
+    "name": "BM-RULE-001",
+    "type": "standard",
+    "effectiveStartDate": "28-Nov-1991",
+    "effectiveEndDate": "28-Nov-2091",
+    "status": "active",
+    "expression": "( ( sellerId == '32cea80f6db8-b5ee-4bf6-3f1c-c0069f22' ) && ( ( department == 4005 || department == 4006 || department == 4007 ) && ( purchagedLocation == 'Bombay' ) ) )",
+    "action": "allowed",
+    "priority": 5
+  },
+  {
+    "id": "c0069f22-3f1c-4bf6-b5ee-32wea80f6er10",
+    "name": "BM-RULE-002",
+    "type": "special",
+    "effectiveStartDate": "21-Jan-1991",
+    "effectiveEndDate": "21-Jan-2091",
+    "status": "active",
+    "expression": "( ( sellerId == '32wea80f6er10-b5ee-4bf6-3f1c-c0069f22' ) && ( ( department == 599 || department == 511 || department == 546 ) && ( purchagedLocation == 'Surat' ) ) )",
+    "action": "unallowed",
+    "priority": 5
+  }
+]
